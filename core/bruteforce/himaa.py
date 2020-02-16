@@ -44,7 +44,7 @@ def function(email,passw,i):
                 print('\npassword is : ',passw)
                 return True
         return False
-
+os.system(" python banner.py ")
 print ("""     
 By:                 ibrahim tarek
 Github:      https://github.com/Hima-Tarek          
@@ -55,6 +55,7 @@ print ("Example: /root/Desktop/pass.txt")
 hima=input('Enter Passwordlist Location : ')
 file=open(hima,'r')
 
+print("\n")
 email=input('Enter Email/Username : ')
 
 print("\nTarget Email ID : ",email)
