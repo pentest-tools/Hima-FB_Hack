@@ -1,3 +1,6 @@
+I am not responsible for any wrong use and cannot bear guilt
+انا غير مسؤول عن اي استخدام خطا ولا اتحمل الذنب
+
 # Hima-FB_Hack
 Facebook Account Hacking Tool
 ------------------------------
