@@ -38,7 +38,7 @@ $ ./hima.sh
  - BruteForce Attack Using Passwordlist
  
 3- Passwordlist Generator
- -Passwordlist generator using Cupp tool
+ - Passwordlist generator using Cupp tool
  
  --------------------------------------------------------------------------------------------------------------------
  # ScreenShots :
