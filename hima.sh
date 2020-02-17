@@ -19,7 +19,7 @@ echo -e $color
 
 clear
 cd core
-python2 banner.py
+python banner.py
 
 
 read -p "Enter Your Choice: " choose
@@ -27,7 +27,7 @@ read -p "Enter Your Choice: " choose
 if [ $choose -eq 1 ]; then
 
 cd auto
-python3 hima.py
+python2 hima.py
 
 elif [ $choose -eq 2 ]; then
 clear
