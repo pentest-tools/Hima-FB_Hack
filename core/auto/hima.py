@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # coding=utf-8
 
+
 #Import module
 import os,sys,time,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib
 from multiprocessing.pool import ThreadPool
@@ -26,7 +27,7 @@ br.addheaders = [('User-Agent','Opera/9.80 (Android; Opera Mini/32.0.2254/85. U;
 
 #-Keluar-#
 def keluar():
-	print "\033[1;91m[!] Exit"
+	
 	os.sys.exit()
 	
 #-Warna-#
@@ -58,13 +59,14 @@ logo = """\033[1;96m█████████
 \033[1;96m█▄█████▄█      \033[1;91m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●
 \033[1;96m█\033[1;91m▼▼▼▼▼ \033[1;95m- _ --_--\033[1;95m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ 
 \033[1;96m█ \033[1;92m \033[1;95m_-_-- -_ --__\033[1;93m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗
-\033[1;96m█\033[1;91m▲▲▲▲▲\033[1;95m--  - _ --\033[1;96m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝ \033[1;96mHima_FB
+\033[1;96m█\033[1;91m▲▲▲▲▲\033[1;95m--  - _ --\033[1;96m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝ \033[1;96mHima-Tarek
 \033[1;96m█████████      \033[1;92m«----------✧----------»
 \033[1;96m ██ ██
-\033[1;96m╔═══════════════════════════════════════════════════════════ 
-\033[1;96m║\033[1;96m* \033[1;95mFacebook  \033[1;93m: \033[1;95mhttps://www.facebook.com/daryhen.rayo.5\033[1;96m     ║
-\033[1;96m║\033[1;96m* \033[1;96mGitHub  \033[1;93m: \033[1;96m\033[4mhttps://github.com/Hima-Tarek\033[0m \033[1;96m                ║
-\033[1;96m╚═══════════════════════════════════════════════════════════ """
+\033[1;96m╔══════════════════════════════════════════════╗
+\033[1;96m║\033[1;96m* \033[1;95mBy:  \033[1;93m: \033[1;95mIbrahimTarek \033[1;96m                     ║
+\033[1;96m║\033[1;96m* \033[1;96mGithub  \033[1;93m: \033[1;96m\033[4mhttps://github.com/Hima-Tarek\033[0m \033[1;96m          ║
+\033[1;96m║\033[1;96m*\033[1;93mFacebook  \033[1;93m: \033[1;91m\033mhttps://www.facebook.com/daryhen.rayo.5\033[0m \033[1;96m ║
+\033[1;96m╚══════════════════════════════════════════════╝"""
 
 # titik #
 def tik():
@@ -105,7 +107,7 @@ def lisensi():
 ##### Pilih Login #####
 def masuk():
 	os.system('reset')
-	print logo
+	print (logo)
 	print "\033[1;91m║--\033[1;91m> \033[1;95m1.\033[1;96m Login"
 	print "\033[1;92m║--\033[1;91m> \033[1;95m2.\033[1;96m Login using token"
 	print "\033[1;93m║--\033[1;91m> \033[1;95m0.\033[1;96m Exit"
@@ -133,7 +135,7 @@ def login():
 		menu() 
 	except (KeyError,IOError):
 		os.system('reset')
-		print logo
+		print (logo)
 		print('\033[1;96m[☆] \033[1;92mLOGIN FACEBOOK \033[1;91m[☆]')
 		id = raw_input('\033[1;91m[+] \033[1;36mID\033[1;97m|\033[1;96mEmail\033[1;97m \033[1;91m:\033[1;92m ')
 		pwd = getpass.getpass('\033[1;95m[+] \033[1;93mPassword \033[1;93m:\033[1;95m ')
@@ -185,7 +187,7 @@ def login():
 ##### TOKEN #####
 def tokenz():
 	os.system('reset')
-	print logo
+	print (logo)
 	toket = raw_input("\033[1;91m[?] \033[1;92mToken\033[1;91m : \033[1;97m")
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
@@ -231,7 +233,7 @@ def menu():
 		print"\033[1;91m[!] No connection"
 		keluar()
 	os.system("reset")
-	print logo
+	print (logo)
 	print "║\033[1;91m[\033[1;96m✓\033[1;91m]\033[1;97m Name \033[1;91m: \033[1;92m"+nama+"\033[1;97m"
 	print "║\033[1;91m[\033[1;96m✓\033[1;91m]\033[1;97m ID   \033[1;91m: \033[1;92m"+id
 	print "\033[1;97m╚"+40*"═"
@@ -264,7 +266,7 @@ def pilih():
 		lain()
 	elif zedd =="6":
 		os.system('reset')
-		print logo
+		print (logo)
 		toket=open('login.txt','r').read()
 		print "\033[1;91m[+] \033[1;92mYour token\033[1;91m :\033[1;97m "+toket
 		raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
